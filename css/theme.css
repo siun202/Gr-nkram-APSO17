@@ -1,0 +1,104 @@
+body {
+	margin-top: 50px;
+}
+
+section {
+	min-height: 100vh;
+}
+
+#hero {
+	background: rgba(0,0,0,0.15) url(../imgs/hero-background-walking_dead.jpg) no-repeat left top;
+	background-size: cover;
+}
+
+#skills {
+	background: rgba(0,0,0,0.3);
+}
+
+#referenzen {
+	background: rgba(0,0,0,0.45);
+}
+
+#maps {
+	background: rgba(0,0,0,0.6);
+}
+
+#kontakt {
+	/*background: rgba(0,0,0,0.75);*/
+}
+
+#social {
+	background: rgba(0,0,0,0.9);
+}
+
+.polaroid {
+    background: white;
+    padding: 15px;
+    transform: rotate(-3deg);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: all 1s ease-in-out;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+}
+
+.polaroid:hover {
+	transform: rotate(1080deg);
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+}
+
+.masonry {
+	/* Prefixed für ältere Browser: START */
+	-moz-column-width: 25em;
+	-webkit-column-width: 25em;
+	-moz-column-gap: 4px;
+	-webkit-column-gap:4px;
+	/* Prefixed für ältere Browser: ENDE */
+	column-width: 25em;
+	column-gap:4px;
+}
+
+.masonry figure {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	width:  100%;
+	float: none;
+}
+.masonry figure figcaption {
+	position: absolute;
+	bottom: 0px;
+	opacity: 0;
+	background: rgba(255,255,255,0.75);
+	width: 100%;
+	padding: 5px;
+	transition: 0.5s all ease-in-out;
+}
+
+.masonry figure:hover figcaption {
+	opacity: 1;
+	bottom: 25px;
+}
+
+.masonry img {
+	filter: grayscale(0.75);
+	-webkit-filter: grayscale(0.75);
+	transition: 0.5s all ease-in-out;
+}
+
+.masonry img:hover {
+	filter: grayscale(0);
+	-webkit-filter: grayscale(0);
+	transform:scale(1.2);
+}
+
+#topbutton {
+	font-size: 3em;
+	color: rgb(255,170,0);
+	text-shadow: 2px 2px 2px rgba(172,15,18,1);
+	position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 100;
+    display:none;
+}
